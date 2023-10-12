@@ -1,0 +1,25 @@
+<html>
+<body>
+	<h2>
+		Parsing a JSON Array.
+	</h2>
+	<p>Data written as an JSON array will be parsed into a JavaScript array.
+	</p>
+	<p id="demo"></p>
+	<script>
+	function getcar()
+	{
+		'alert("hii");
+		const text = '[ "Ford","BMW","Audi","Fiat" ]';
+		const myArr=JSON.parse(text);
+		//doucument.write("<ol>");
+		for(i=0;i<4;i++)
+		{
+			doucument.write(+myArr[i]);
+		}
+		//doucument.write("</ol>");
+	}	
+	</script>
+	<button onclick="getcar();">Cars</button>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <center>
+            <asp:Label ID="Label1" runat="server" Text="World Of Music" 
+                Font-Bold="True" Font-Names="Popings:regular" Font-Size="XX-Large"></asp:Label>
+            </center>
+            <br />
+            <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="32px">
+                &nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                    Font-Names="Arial Narrow" Font-Size="Large" Font-Underline="True" 
+                    ForeColor="#FFFFCC" NavigateUrl="~/admin/Home.aspx" style="marg">Home</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                    Font-Names="Arial Narrow" Font-Size="Large" Font-Underline="True" 
+                    ForeColor="#FFFFCC" NavigateUrl="~/admin/AboutUs.aspx">About Us</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                    Font-Names="Arial Narrow" Font-Size="Large" Font-Underline="True" 
+                    ForeColor="#FFFFCC" NavigateUrl="~/admin/Reges.aspx" 
+                    style="float:right; margin-left: 0px;">sign-up</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                    Font-Names="Arial Narrow" Font-Size="Large" Font-Underline="True" 
+                    ForeColor="#FFFFCC" NavigateUrl="~/admin/login.aspx" 
+                    style="float:right; margin-left: 0px;" Width="78px">Log-in</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+                    Font-Names="Arial Narrow" Font-Size="Large" Font-Underline="True" 
+                    ForeColor="#FFFFCC" NavigateUrl="~/admin/Order.aspx">Order</asp:HyperLink>
+        </asp:Panel>
+   
+        <link href="boostreap/slider.css" rel="stylesheet" type="text/css" />
+&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
